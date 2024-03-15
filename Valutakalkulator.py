@@ -105,3 +105,4 @@ if B not in Valuta_Koder:
 Result = A * Valuta_Koder[B]  # Konverterer beløpet fra input A til input B
 
 print(f"{A}NOK tilsvarer {Result} {B}")
+
