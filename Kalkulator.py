@@ -11,10 +11,6 @@ slow_print("Velkommen til min kalkulator")
 slow_print("Skriv inn det første tallet")
 A = float(input(""))
 
-slow_print("skriv inn det andre tallet")
-B = float(input(""))
-
-
 while True:
     slow_print("Velg mellom:")
     slow_print("1: + (plusse)")
@@ -28,6 +24,9 @@ while True:
         break  
     else:
         print("Ugyldig inndata, vennligst prøv på nytt")
+
+slow_print("skriv inn det andre tallet")
+B = float(input(""))
 
 if C == '1' or C == '+':
     result = A + B

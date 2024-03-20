@@ -84,7 +84,7 @@ Valuta_Navn = [
     ('PKR', 'Pakistani Rupee')
 ]
 
-
+# intro for kalkulator
 print("Velkommen til min valutakalkulator:")
 print("Skriv inn summen som skal bli konvertert fra nok: ")
 A = float(input(""))
@@ -94,7 +94,7 @@ for valutakode, valutanavn in Valuta_Navn:
 print("Tilgjengelige valutakoder:")
 
 
-print("Vennligst skriv inn valutakode til")
+print("Vennligst skriv inn valutakode som skal bli konvertert")
 B = input("").upper()  # Konverterer til store bokstaver for å matche nøklene i valutakodene
 
 # Sjekker om valutakoden finnes i listen
@@ -105,4 +105,3 @@ if B not in Valuta_Koder:
 Result = A * Valuta_Koder[B]  # Konverterer beløpet fra input A til input B
 
 print(f"{A}NOK tilsvarer {round(Result, 3)} {B}")
-
