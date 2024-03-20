@@ -31,7 +31,7 @@ while True:
 
 if C == '1' or C == '+':
     result = A + B
-    slow_print(f"Svaret er {result}")
+    slow_print(f"Svaret er {round(result, 3)}")
     
 if C == '2' or C == '/':
     result = A / B
@@ -39,7 +39,7 @@ if C == '2' or C == '/':
 
 if C == '3' or C == '*':
     result = A * B
-    slow_print(f"Svaret er {result}")
+    slow_print(f"Svaret er {round(result, 3)}")
 
 if C == '4' or C == '-':
     result = A - B
