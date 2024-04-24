@@ -1,3 +1,4 @@
+#valuta og valutaantall
 Valuta_Koder = {
     'USD': 0.095,
     'GBP': 0.075,
@@ -40,6 +41,8 @@ Valuta_Koder = {
     'EGP': 4.64,
     'PKR': 26.59
 }
+
+#Valuta forkortelse og valuta navn 
 
 Valuta_Navn = [
     ('USD', 'United States Dollar'),
@@ -89,6 +92,7 @@ print("Velkommen til min valutakalkulator:")
 print("Skriv inn summen som skal bli konvertert fra nok: ")
 A = float(input(""))
 
+#printer kodene og navnene hver for seg
 for valutakode, valutanavn in Valuta_Navn:
     print(f"{valutakode}: {valutanavn}")
 print("Tilgjengelige valutakoder:")
@@ -104,4 +108,4 @@ if B not in Valuta_Koder:
 
 Result = A * Valuta_Koder[B]  # Konverterer beløpet fra input A til input B
 
-print(f"{A}NOK tilsvarer {round(Result, 3)} {B}")
+print(f"{A}NOK tilsvarer {round(Result, 3)} {B}") #printer resultatet
